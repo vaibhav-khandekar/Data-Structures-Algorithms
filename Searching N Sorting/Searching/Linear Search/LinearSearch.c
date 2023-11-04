@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-	int i,j,s,search,array[100];
+	int i,s,search,array[100];
 	clrscr();
 	printf("\nenter size of the array = ");
 	scanf("%d",&s);
