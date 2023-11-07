@@ -5,11 +5,12 @@ class Stack {
         int stack[],max,c,e,temp;
         int top=-1;
         Scanner sc = new Scanner(System.in);
+        System.out.println("stack implementation using array");
         System.out.print("enter size of the stack = ");
         max = sc.nextInt();
         stack = new int[max];
         while (true) {
-            System.out.println("\nchoose the stack operations: \n1. push \n2. pop \n3. top \n4. display \n5. exit");
+            System.out.print("\n1. push \n2. pop \n3. top \n4. display \n5. exit \nchoose the stack operations: ");
             c = sc.nextInt();
             switch (c) {
                 case 1:
@@ -29,9 +30,9 @@ class Stack {
                         System.out.println("stack is empty. underflow.");
                     }
                     else {
-                        temp = stack[top];
+                        //temp = stack[top];
+                        System.out.println("deleted element is "+top);
                         top--;
-                        System.out.println("deleted element is "+temp);
                     }
                     break;
                 
